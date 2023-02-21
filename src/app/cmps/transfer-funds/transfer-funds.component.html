@@ -1,0 +1,35 @@
+<div class="transfer-funds-wrapper">
+  <div class="transfer-funds-container">
+    <h3>Transfer Funds to {{contact.name}}</h3>
+    <div class="transfer-funds-header">
+      <p>Enter the amount you would like to transfer to the user.</p>
+    </div>
+    <form (ngSubmit)="onTransferCoins()">
+      <mat-form-field appearance="fill">
+        <mat-label>Amount</mat-label>
+        <input
+          type="number"
+          matInput
+          [formControl]="amountFormControl"
+          max="{{ maxCoins }}"
+          placeholder="Enter amount"
+          aria-describedby="price-currency"
+        />
+        <span matTextPrefix>$&nbsp;</span>
+        <span matTextSuffix>.00</span>
+        <mat-hint align="end">Your Balance: {{ maxCoins }} coins</mat-hint>
+        <mat-error *ngIf="amountFormControl.hasError('max')"
+          >You don't have enough coins to transfer</mat-error
+        >
+      </mat-form-field>
+      <button
+        type="submit"
+        mat-raised-button
+        color="primary"
+        [disabled]="amountFormControl.invalid"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>

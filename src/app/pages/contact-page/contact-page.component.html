@@ -1,0 +1,13 @@
+<section class="contact-page-container">
+  <div class="content-container">
+    <div class="contact-list-container">
+      <contact-list
+        (remove)="onRemoveContact($event)"
+        [contacts]="contacts$ | async"
+      ></contact-list>
+    </div>
+    <div class="outlet">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>

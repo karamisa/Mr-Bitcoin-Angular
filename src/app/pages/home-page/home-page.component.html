@@ -1,0 +1,38 @@
+<div *ngIf="user" class="home-page container">
+  <div class="left">
+    <mat-card>
+      <div class="welcome-msg">
+        <div class="welcome-msg-container">
+          <h3>Welcome, {{ user.name }}!</h3>
+          <p>
+            Welcome to your Bitcoin Wallet. You can see an overview of your
+            account here
+          </p>
+        </div>
+      </div>
+    </mat-card>
+
+    <moves-list [moves]="latestMoves" title="Recent Activity"></moves-list>
+  </div>
+
+  <div class="right">
+    <div *ngIf="bitcoinRate" class="btc-rate stati bg-carrot left">
+      <fa-icon [icon]="faBitcoin"></fa-icon>
+      <div>
+        <b>{{ bitcoinRate }} USD/BTC</b>
+        <span>Current Transfer Rate</span>
+      </div>
+    </div>
+
+    <div class="user-balance stati carrot right">
+      <fa-icon [icon]="faMoneyBill"></fa-icon>
+      <div>
+        <b>${{ user.coins }}</b>
+        <span>Current Balance</span>
+      </div>
+    </div>
+    <button mat-flat-button color="primary" (click)="onAddFunds()">
+      Add Funds
+    </button>
+  </div>
+</div>

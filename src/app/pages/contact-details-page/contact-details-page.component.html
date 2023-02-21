@@ -1,0 +1,54 @@
+<a mat-button color="accent" routerLink="/contact">
+  <fa-icon [icon]="faArrowLeftLong"></fa-icon>
+  Back
+</a>
+<div *ngIf="contact" class="details-page-container">
+  <div class="contact-details">
+    <div class="avatar-container">
+      <img
+        class="profile-img"
+        src="https://robohash.org/{{ contact._id }}?set=set4"
+        alt=""
+      />
+    </div>
+    <span>
+      <p class="contact-name">
+        {{ contact.name }}
+        <a
+          mat-icon-button
+          [routerLink]="['/contact/edit', contact._id]"
+          class="edit-btn"
+        >
+          <fa-icon [icon]="faPenToSquare"></fa-icon>
+        </a>
+      </p>
+    </span>
+
+    <div class="contact-info-container">
+      <mat-card>
+        <mat-card-content>
+          <mat-card-subtitle>Phone</mat-card-subtitle>
+          <p>{{ contact.phone }}</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-content>
+          <mat-card-subtitle>Email</mat-card-subtitle>
+          <p>{{ contact.email }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="transfer-cmps">
+    <transfer-funds
+      [contact]="contact"
+      (transfer)="onTransferCoins($event)"
+      [maxCoins]="user.coins"
+    ></transfer-funds>
+    <moves-list
+      [moves]="contactMoves"
+      title="{{ contact.name }}'s recent transfers"
+    ></moves-list>
+  </div>
+</div>

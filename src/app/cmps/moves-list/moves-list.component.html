@@ -1,0 +1,12 @@
+<div class="moves-list">
+  <h3>
+    {{ title }}
+    <mat-divider></mat-divider>
+  </h3>
+  <mat-card *ngFor="let move of moves">
+    <mat-card-content
+      >{{ move.to }} recieved ${{ move.amount }} on
+      {{ move.at | date }}</mat-card-content
+    >
+  </mat-card>
+</div>

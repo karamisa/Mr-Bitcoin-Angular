@@ -1,0 +1,93 @@
+.contact-preview{
+  position: relative;
+  display: flex;
+  &:hover {
+    .actions {
+      opacity: 1;
+    }
+  }
+}
+
+.contact-preview a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    padding-right: 120px;
+    border-bottom: 1px solid #E5E7EB;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    &:hover{
+        background-color: #F3F4F6;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.avatar-container{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+  }
+
+  .contact-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .contact-phone {
+    font-size: 0.875rem;
+    color: #6B7280;
+  }
+  
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contact-info-container{
+    flex: 1;
+    min-width: 0;
+  }
+
+  .actions {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.1s ease-in-out;
+
+    .edit-btn{
+      color: #ffa710;
+      &:hover{
+        color: #F59E0B;
+      }
+    }
+
+    .remove-btn{
+      color: red;
+      &:hover{
+        color: #DC2626;
+      }
+    }
+
+  }
+
+
+

@@ -1,0 +1,19 @@
+.contact-page-container {
+  position: relative;
+}
+
+.content-container {
+  position: relative;
+  display: flex;
+
+  .contact-list-container {
+    height: calc(100vh - 4rem - 4rem);
+    overflow-y: auto;
+  }
+
+  .outlet {
+    height: calc(100vh - 4rem - 4rem);
+    overflow-y: auto;
+    flex: 1;
+  }
+}

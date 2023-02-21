@@ -1,0 +1,23 @@
+<section class="contact-preview">
+  <a [routerLink]="['/contact', contact._id]">
+    <div class="avatar-container">
+      <img
+        class="profile-img"
+        src="https://robohash.org/{{ contact._id }}?set=set4"
+        alt=""
+      />
+    </div>
+    <div class="contact-info-container">
+      <p class="contact-name">{{ contact.name }}</p>
+      <p class="contact-phone truncate">{{ contact.phone }}</p>
+    </div>
+  </a>
+  <section class="actions">
+    <button mat-icon-button (click)="onEditContact($event)" class="edit-btn">
+      <fa-icon [icon]="faPenToSquare"></fa-icon>
+    </button>
+      <button mat-icon-button (click)="onRemoveContact($event)" class="remove-btn">
+      <fa-icon [icon]="faXmark"></fa-icon>
+      </button>
+  </section>
+</section>

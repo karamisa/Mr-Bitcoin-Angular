@@ -1,0 +1,61 @@
+.transfer-funds-wrapper {
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.transfer-funds-container {
+  padding: 1.25rem 1rem;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  h3{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: rgb(17 24 39);
+  }
+
+}
+
+.transfer-funds-header{
+    margin-top: 0.5rem;
+    max-width: 36rem;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+    color: rgb(107 114 128);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    button {
+        margin-left: 1rem;
+    }
+}
+
+
+
+
+
+input {
+  text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+input {
+  -moz-appearance: textfield;
+}

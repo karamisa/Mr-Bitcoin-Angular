@@ -1,0 +1,28 @@
+.contact-edit{
+    padding: 1rem;
+    margin: 3rem auto;
+    text-align: center;
+
+}
+
+form {
+  padding: 1rem;
+  max-width: 30rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  label {
+    margin-top: 1em;
+  }
+
+  button {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  button + button {
+    margin: 20px auto;
+  }
+}
