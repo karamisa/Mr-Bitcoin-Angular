@@ -25,6 +25,11 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@taiga-ui/addon-charts": "^3.19.0",
+    "@taiga-ui/cdk": "^3.19.0",
+    "@taiga-ui/core": "^3.19.0",
+    "@taiga-ui/icons": "^3.19.0",
+    "@taiga-ui/kit": "^3.19.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

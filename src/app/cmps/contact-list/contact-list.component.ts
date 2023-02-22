@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Contact } from 'src/app/models/contact.model';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'contact-list',
@@ -9,6 +10,8 @@ import { Contact } from 'src/app/models/contact.model';
 export class ContactListComponent {
   @Input() contacts!: Contact[] | null;
   @Output() remove = new EventEmitter();
+
+  faPlus = faPlus;
 
   getLetters() {
     const letters: string[]= [];

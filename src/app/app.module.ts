@@ -1,3 +1,4 @@
+import { TuiRootModule } from '@taiga-ui/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,19 +14,25 @@ import { ContactDetailsPageComponent } from './pages/contact-details-page/contac
 import { ContactEditPageComponent } from './pages/contact-edit-page/contact-edit-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ChartComponent } from './cmps/chart/chart.component';
 import { StatisticsPageComponent } from './pages/statistics-page/statistics-page.component';
 import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TransferFundsComponent } from './cmps/transfer-funds/transfer-funds.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { MovesListComponent } from './cmps/moves-list/moves-list.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { TuiAxesModule } from '@taiga-ui/addon-charts';
+import {TuiLineChartModule} from '@taiga-ui/addon-charts';
+import { TuiInputDateRangeModule } from '@taiga-ui/kit';
+import { TuiLineDaysChartModule } from '@taiga-ui/addon-charts';
+import {TuiCarouselModule} from '@taiga-ui/kit';
+import { TuiIslandModule } from '@taiga-ui/kit';
+import {TuiTagModule} from '@taiga-ui/kit';
 
 
 @NgModule({
@@ -39,13 +46,11 @@ import { MatDividerModule } from '@angular/material/divider';
     ContactEditPageComponent,
     ContactPageComponent,
     HomePageComponent,
-    ChartComponent,
     StatisticsPageComponent,
     AppHeaderComponent,
     TransferFundsComponent,
     SignupComponent,
     MovesListComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -59,10 +64,17 @@ import { MatDividerModule } from '@angular/material/divider';
     MatInputModule,
     MatCardModule,
     FontAwesomeModule,
-    MatDividerModule
-
+    MatDividerModule,
+    TuiRootModule,
+    TuiAxesModule,
+    TuiLineChartModule,
+    TuiInputDateRangeModule,
+    TuiLineDaysChartModule,
+    TuiCarouselModule,
+    TuiIslandModule,
+    TuiTagModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -57,9 +57,46 @@ input {
 }
 
 .container {
-    padding-inline: 16px;
+    padding-inline: 16px !important;
+
+    @media (min-width: 768px) {
+        padding-inline: 32px !important;
+    }
+
+    @media (min-width: 1024px) {
+        padding-inline: 64px !important;
+    }
+
+    @media (min-width: 1440px) {
+        padding-inline: 128px !important;
+    }
 }
 
+.t-name {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    .t-labels-x {
+        display: none !important;
+    }
+
+    .t-name {
+        display: none !important;
+    }
+
+    .axes{
+        padding: 16px !important;
+    }
+}
+    
+
+
+.t-items {
+    transition: transform 30s !important;
+}
 
 
 html, body { height: 100%; }

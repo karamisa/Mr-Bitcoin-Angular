@@ -1,6 +1,9 @@
+<button class="toggle" (click)="toggleMenu()">
+  <fa-icon [icon]="faBars"></fa-icon>
+</button>
 <section class="contact-page-container">
   <div class="content-container">
-    <div class="contact-list-container">
+    <div class="contact-list-container open">
       <contact-list
         (remove)="onRemoveContact($event)"
         [contacts]="contacts$ | async"

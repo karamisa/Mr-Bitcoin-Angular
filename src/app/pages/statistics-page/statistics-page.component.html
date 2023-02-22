@@ -1,1 +1,51 @@
-<h2>STATS COMING SOON........</h2>
+<div>
+  <div class="exchange-rates">
+  <tui-carousel *ngIf="exchangeRates" [duration]="2000" [(index)]="index" [itemsCount]="4">
+    <ng-container *ngFor="let item of exchangeRates">
+      <tui-island *tuiItem>
+        <h2 class="tui-island__title">{{ item[0] }}</h2>
+        <p class="tui-island__content">
+          {{ item[1].last | currency: item[0].symbol}}
+        </p>
+
+      </tui-island>
+    </ng-container>
+  </tui-carousel>
+</div>
+
+  <h1 class="page-heading">BTC Market Price</h1>
+  <tui-axes
+    *ngIf="value"
+    class="axes"
+    [verticalLines]="4"
+    [horizontalLines]="2"
+    axisYName="Price"
+    [axisXLabels]="xLabels"
+  >
+    <tui-line-chart
+      class="chart"
+      [x]="startX"
+      [y]="startY - 10"
+      [width]="endX - startX"
+      [height]="endY - startY"
+      [smoothingFactor]="50"
+      [value]="value"
+      [filled]="true"
+    ></tui-line-chart>
+  </tui-axes>
+  
+</div>
+<div class="area" >
+  <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+  </ul>
+</div >
