@@ -2,6 +2,7 @@
 # Project Title
 
 Mr. Bitcoin --- Angular
+Demo https://karamisa.github.io/Mr-Bitcoin-Angular/
 
 
 This app is a simple Angular application that allows users to view Bitcoin market data and manage contacts. This app was created after a week of learning Angular, and getting familiar with the plethera of features within it. 
@@ -9,11 +10,6 @@ This app is a simple Angular application that allows users to view Bitcoin marke
 ## Authors
 
 - [@karamisa](https://www.github.com/karamisa)
-
-
-## Demo
-
-
 
 
 ## Features
