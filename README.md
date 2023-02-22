@@ -1,27 +1,51 @@
-# MR-Bitcoin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+# Project Title
 
-## Development server
+Mr. Bitcoin --- Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+This app is a simple Angular application that allows users to view Bitcoin market data and manage contacts. This app was created after a week of learning Angular, and getting familiar with the plethera of features within it. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Authors
 
-## Build
+- [@karamisa](https://www.github.com/karamisa)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Demo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Features
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Directives
+- AuthGuards
+- Resolver 
+- Routing 
+- Services via Dependency Injection
+
+
+## Screenshots
+
+### Home Page:
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+### Contacts:
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+### Stats:
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+### Mobile:
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+
+
+## Lessons Learned
+
+I learned that Angular is a very large framework that is very powerfull. It would take years to master but you do things in Angular that you can't do on other frameworks.
+
