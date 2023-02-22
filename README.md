@@ -25,19 +25,19 @@ This app is a simple Angular application that allows users to view Bitcoin marke
 
 ### Home Page:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/karamisa/Mr-Bitcoin-Angular/blob/main/sc/scHome.jpg?raw=true)
 
 ### Contacts:
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/karamisa/Mr-Bitcoin-Angular/blob/main/sc/scContacts.jpg?raw=true)
 
 ### Stats:
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/karamisa/Mr-Bitcoin-Angular/blob/main/sc/scStats.jpg?raw=true)
+
 
 ### Mobile:
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![App Screenshot](https://github.com/karamisa/Mr-Bitcoin-Angular/blob/main/sc/scMobilContacts.jpg?raw=true)
+![App Screenshot](https://github.com/karamisa/Mr-Bitcoin-Angular/blob/main/sc/scmobileContacts2.jpg?raw=true)
+![App Screenshot](https://github.com/karamisa/Mr-Bitcoin-Angular/blob/main/sc/scmobileStats.jpg?raw=true)
 
 
 
